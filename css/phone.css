@@ -1,0 +1,66 @@
+/* Navigation Bar */
+@media  screen and (max-width: 600px) {
+    .navbar img{
+        width: 26px;
+    }
+    .navbar ul li a{
+        font-size: 1rem;
+    }
+    
+}
+/* Home Section */
+.welcome h1{
+    font-size: 2.5rem;
+}
+.welcome p{
+    font-size: 1rem;
+}
+.greet{
+    font-size: 2.2rem;
+}
+
+/* Menu Section */
+
+.container .head{
+    font-size: 2rem;
+}
+.items{
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+#menu::before{
+    height: 71%;
+}
+
+/* About Us */
+
+.chef{
+    flex-direction: column;
+    align-items:center
+}
+.chef img{
+    width: 35%;
+}
+.resturant{
+    flex-direction: column-reverse;
+    align-items:center
+}
+.resturant img{
+    width: 35%;
+}
+.abt-resturant{
+    margin: 12px auto;
+}
+.abt-resturant p{
+    font-size: 1rem;
+}
+.box{
+    margin-bottom: 10px;
+}
+
+/* Contact Us */
+
+#contact h1{
+    font-size: 1.8rem;
+    margin-top: 20px;
+}

@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Navigation Bar */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+.navbar::before{
+    background-color: black;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+.navbar img{
+    width: 5%;
+    filter: invert(1);
+    margin-left: 19px;
+}
+.navbar .name{
+    color: white;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 10px 12px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Bree Serif', serif;
+}
+.navbar ul li a:hover{
+    color: black;
+    background: white;
+}
+/* Home */
+
+#home::before{
+    content: "";
+    background-image: url(../images/pexels-steyn-viljoen-62097.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    top: 0;
+    opacity: .8;
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.welcome h1{
+    color: black;
+    font-family: 'Lobster Two', cursive;
+    font-size: 3.5rem;
+    margin: 26px;
+}
+.welcome p{
+    font-family: 'Alegreya Sans', sans-serif;
+    color: black;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin: 5px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn button{
+    width: 125px;
+    height: 30px;
+    margin: 18px 12px;
+    font-family: 'Bree Serif', serif;
+    border-radius: 23px;
+}
+.btn button:hover{
+    background-color: rgb(85, 84, 84);
+    color: white;
+    cursor: pointer;
+}
+.greet{
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 2.5rem;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Menu */
+#menu::before{
+    content: "";
+    background-image: url(../images/pexels-lisa-fotios-1279330.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    z-index: -2;
+    top: -175px;
+    opacity: .8;
+}
+.menu-tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu-tag h1{
+    font-family: 'Lobster Two', cursive;
+    font-size: 2rem;
+    margin: 12px;
+}
+.menu-tag p{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 2px;
+}
+.menu-items{
+    background-color: black;
+    width: 95%;
+    margin: 57px auto;
+}
+
+/* About Us */
+#about::before{
+    content: "";
+    background-image: url(../images/pexels-viktoria-alipatova-2074130.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 65%;
+    z-index: -2;
+    opacity: .8;
+    top: 0;
+}
+.abt-resturant{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    align-items: center;
+    justify-content: center;
+    margin: 35px auto;
+}
+.abt-resturant h1{
+    margin: 12px;
+    font-family: 'Lobster Two', cursive;
+    font-size: 2rem;
+}
+.abt-resturant p{
+    margin: 2px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.about-us{
+    background-color: white;
+}
+.resturant{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.chef{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 55px;
+}
+.resturant img{
+    width: 24%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.chef img{
+    width: 24%;
+    margin-top: 45px;
+}
+
+/* Contact Us */
+#contact::before{
+    content: "";
+    background-image: url(../images/pexels-julie-aagaard-2351274.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    opacity: .7;
+}
+#contact h1{
+    margin: 40px 0 3px 0;
+    font-size: 2rem;
+    font-family: 'Lobster Two', cursive;
+}
+.forms{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.forms label{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: bold;
+}
+.forms div input{
+    margin: 7px;
+    padding: 2px;
+}
+.forms textarea{
+    margin: 10px;
+}
+#id input{
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+.forms textarea{
+    width: 95%;
+}
+.forms input[type=text]{
+    width: 50%;
+}
+.forms input[type=email]{
+    width: 50%;
+}
+.forms input[type=submit]{
+    width: 97%;
+}
+
+/* Utility Classes */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.head{
+    margin: 25px 0;
+    color: white;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+.items{
+    display: flex;
+    justify-content: center;
+}
+.items div{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.items .name{
+    padding: 5px 104px;
+}
+.items .price{
+    padding: 9px 44px;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: .1rem;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box h2{
+    margin-bottom: 8px;
+    font-family: 'Roboto Slab', serif;
+}
+.box p{
+    font-family: 'Roboto', sans-serif;
+}
+.divi{
+    margin: 0 5px;
+}
